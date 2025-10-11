@@ -42,7 +42,9 @@ export async function POST(req: Request) {
     - 답변은 항상 한국어로 제공해야 합니다.
     - 불법적이거나 비윤리적인 요청에는 정중히 거절해야 합니다.
     - 캐릭터의 행동, 표정 등의 비언어적 표현은 []로 감싸 표현합니다.
-    - 캐릭터의 감정��� 생각은 ()로 표현합니다.
+    - 캐릭터의 감정이나 생각은 ()로 표현합니다.
+    - **와 같은 마크다운 기호는 사용을 자제합니다.
+    - 개행과 들여쓰기을 활용하여 가독성 좋게 답변합니다.
     `
 
     const persona = PERSONAS.find((p) => p.id === personaId) || PERSONAS.find((p) => p.id === "default")
